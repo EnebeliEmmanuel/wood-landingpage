@@ -1,0 +1,417 @@
+@media all and (max-width: 700px) {
+  nav {
+    height: 100px;
+    width: 100%;
+    display: block;
+    position: fixed;
+    z-index: 10;
+    background-color: #fdf3ba;
+  }
+  .project-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 20px 13%;
+    grid-gap: 30px;
+  }
+
+  .projects-section > p {
+    color: #ffffff;
+    text-align: center;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 50px;
+  }
+
+  .a-project-card {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .projects-section > p {
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+ 
+.about-me {
+  /* background: radial-gradient(37.11% 37.11% at 50% 50%, rgba(19, 21, 23, 0.85) 0%, #131517 100%); */
+  padding: 30px 5% 30px 5%;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 110px;
+}
+
+.a-nav-link {
+  color: #fff;
+}
+
+.added {
+  position: relative;
+  right: 2.5rem;
+}
+
+
+.css-typewriting-container {
+  display: inline-flex;
+  margin-bottom: 5px;
+}
+
+.dynamic-text li span {
+  position: relative;
+}
+
+.css-typewriting-container-2 {
+  display: inline-flex;
+  margin-bottom: 5px;
+}
+
+.dynamic-text-2 li span {
+  position: relative;
+}
+
+.dynamic-text-2 li span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  /* height: 40px; */
+  height: fit-content;
+  width: 100%;
+  background: #131517;
+  border-left: 2px solid #fdde6d;
+  
+}
+
+.static-text {
+  color: #161616;
+ 
+  font-size: 35px;
+  font-weight: bold;
+}
+
+li > a:hover {
+  color: #fdde6d;
+  transition: all 1s ease-in-out;
+}
+
+.socials-logo {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.socials-logo > span > a {
+  color: #5a5a5a;
+  margin-right: 20px;
+  font-size: 25px;
+}
+
+.socials-logo > span > a:hover {
+  color: #fdde6d;
+  transition: all 0.5s ease-in-out;
+}
+
+.hire-me-btn {
+  background-color: #000000;
+  padding: 13px;
+  margin-right: 40px;
+  color: #fdde6d;
+  text-decoration: none;
+}
+.Explore {
+  background-color: #301201;
+  padding: 13px;
+  margin-right: 40px;
+  color: #fff;
+  text-decoration: none;
+  margin-top: 40px;
+  border-radius: 0.3rem;
+}
+
+
+
+  .mini-mobile-nav {
+    padding: 0px 10px 15px 10px;
+  }
+
+
+  .main-logo:hover {
+    transform: rotate(360deg);
+  }
+
+  #nav-links {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+    transition: all 3s ease-in-out;
+    margin-top: -100%;
+   background-color: #727272;
+    z-index: 5 !important;
+  }
+
+  #nav-links > ul {
+    list-style: none;
+  }
+
+  li > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    line-height: 20px;
+    padding: 15px 0 15px 0;
+  }
+
+
+  #toogle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+  }
+
+  #toogle::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 28px;
+    background-color: #ffffff;
+    transform: translateY(-5px);
+    transition: 0.2s;
+  }
+
+  #toogle::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 28px;
+    background-color: #ffffff;
+    transform: translateY(5px);
+    transition: 1s;
+  }
+
+  #toogle.active::before {
+    transform: translateY(0px) rotate(45deg);
+  }
+
+  #toogle.active::after {
+    transform: translateY(0px) rotate(-45deg);
+  }
+
+  #nav-links.active {
+    transition: all 1.7s ease-in;
+    margin-top: 0 !important;
+  }
+
+
+  @keyframes slide-2 {
+    100% {
+      top: -70px;
+      margin: 0 0 0 0;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+
+    .image {
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+    .project-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: 20px 13%;
+      grid-gap: 30px;
+    }
+  
+    .projects-section > p {
+      color: #ffffff;
+      text-align: center;
+      font-weight: 600;
+      font-size: 35px;
+      line-height: 50px;
+    }
+  
+    .a-project-card {
+      width: 100%;
+      border-radius: 10px;
+    }
+  
+    .projects-section > p {
+      font-size: 30px;
+      font-weight: 500;
+    }
+    .copyright-container > p {
+      text-align: center;
+      color: #1b1b1b;
+      line-height: 30px;
+      position: relative;
+      left: 16rem;
+    }
+
+@keyframes circle {
+  from {
+    box-shadow: 0 0 0 0px #fdde6d;
+  }
+  to {
+    box-shadow: 0 0 0 6px rgba(255, 255, 255, 0);
+  }
+}
+
+/* Tone down the animation to avoid vestibular motion triggers like scaling or panning large objects. */
+prefers-reduced-motion {
+  /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+  @media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* 
+  By default, we'll use the REDUCED MOTION version of the animation.
+*/
+@keyframes modal-enter {
+  from {
+    opacity: 0 ;
+  }
+  to {
+    opacity: 1 ;
+  }
+}
+
+/*
+  Then, if the user has NO PREFERENCE for motion, we can OVERRIDE the
+  animation definition to include both the motion and non-motion properties.
+*/
+@media ( prefers-reduced-motion: no-preference ) {
+  @keyframes modal-enter {
+    from {
+      opacity: 0 ;
+      transform: scale(0.7) ;
+    }
+    to {
+      opacity: 1 ;
+      transform: scale(1.0) ;
+    }
+  }
+}
+  
+}
+
+@media screen and (max-width: 355px) {
+  .my-image-background {
+    display: none;
+  }
+  .project-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 20px 13%;
+    grid-gap: 30px;
+  }
+
+  .projects-section > p {
+    color: #ffffff;
+    text-align: center;
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 50px;
+  }
+
+  .a-project-card {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .projects-section > p {
+    font-size: 30px;
+    font-weight: 500;
+  }
+
+  .copyright-container > p {
+    text-align: center;
+    color: #1b1b1b;
+    line-height: 30px;
+    position: relative;
+    left: 16rem;
+  }
+  @keyframes circle {
+    from {
+      box-shadow: 0 0 0 0px #fdde6d;
+    }
+    to {
+      box-shadow: 0 0 0 6px rgba(255, 255, 255, 0);
+    }
+  }
+
+  
+/* Tone down the animation to avoid vestibular motion triggers like scaling or panning large objects. */
+prefers-reduced-motion {
+  /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+  @media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+      scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+/* 
+  By default, we'll use the REDUCED MOTION version of the animation.
+*/
+@keyframes modal-enter {
+  from {
+    opacity: 0 ;
+  }
+  to {
+    opacity: 1 ;
+  }
+}
+
+/*
+  Then, if the user has NO PREFERENCE for motion, we can OVERRIDE the
+  animation definition to include both the motion and non-motion properties.
+*/
+@media ( prefers-reduced-motion: no-preference ) {
+  @keyframes modal-enter {
+    from {
+      opacity: 0 ;
+      transform: scale(0.7) ;
+    }
+    to {
+      opacity: 1 ;
+      transform: scale(1.0) ;
+    }
+  }
+}
+
+}
+
+
+
+

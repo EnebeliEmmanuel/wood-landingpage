@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Emmmanuel Enebeli Website, An Experienced frontend Developer" />
+ <!-- Google / Search Engine Tags -->
+ <meta itemprop="name" content="Emmanuel Enebeli, Koko-Codes" />
+ 
+ <meta itemprop="image" content="./images/koko's-image.png" />
+
+ <!-- Facebook Meta Tags -->
+ <meta property="og:url" content="" />
+ <meta property="og:type" content="website" />
+ <meta property="og:title" content="Emmanuel Enebeli, Koko-Codes" />
+ <meta
+   property="og:description"
+   content="Emmanuel Enebeli Website, An Experienced frontend Developer, Koko-Codes"
+ />
+ <meta property="og:image" content="./images/koko's-image.png" />
+
+ <!-- Twitter Meta Tags -->
+ <meta name="twitter:box" content="Emmanuel Enebeli, An Experienced frontend Developer, Koko-Codes" />
+ <meta name="twitter:card" content="Emmanuel Enebeli, An Experienced frontend Developer, Koko-Codes" />
+ <meta name="twitter:title" content="Emmanuel Enebeli, Koko-Codes" />
+ 
+    <title>Koko-Codes</title>
+    <link rel="stylesheet" href="mobile-view.css" />
+    <link rel="stylesheet" href="desktop-view.css" />
+    <link rel="stylesheet" href="main.css" />
+
+    <link rel="stylesheet" href="style.css">
+ 
+ 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <nav  id="main-nav">
+      <span class="mini-mobile-nav">
+        <div id="toogle"></div>
+
+        <main id="home">
+          <h1 class="lg-heading" style="color: #5a2202;">
+              woods
+          </h1>
+        
+          </main>
+      </span>
+
+      <span id="nav-links">
+        <ul>
+          <li>
+            <a  href="#Home-section" id="a-nav-link"style="color: black;">Home</a>
+          </li>
+          <li>
+            <a href="#projects-section" id="a-nav-link" id="a-nav-link"style="color: black;">Products</a>
+          </li>
+          <li>
+            <a  href="#Discover-section" id="a-nav-link" style="color: black;">Discover</a>
+          </li>
+          <li>
+          <a  href="#contact-section" id="a-nav-link" style="color: black;">Contacts</a>
+          </li>
+          
+        </ul>
+      </span>
+      <span  id="nav-links" >
+        <ul>
+          <li>
+        <a href="./images/magnifying-glass.png" target="_blank"  id="a-nav-link"
+        style="color: black;"><i class="fas fa-search"></i></a
+        >
+        </li>
+        <li>
+        <a href="./images/shopping-bag.png" target="_blank"  id="a-nav-link"
+        style="color: black;"><i class="fas fa-shopping-bag"></i></a
+      >
+    </li>
+          
+  </ul>
+      </span>
+    </nav>
+    
+
+    
+    <div class="about-me">
+     
+
+      <span class="about-me-content" >
+        <div   class="css-typewriting-container">
+          <div class="static-text" style="color: black;"> For the home of<br/> tomorrow</span></div>
+        
+        </div>
+        <p></p>
+       
+        <p  style="line-height: 2rem;color: rgb(87, 87, 87);">
+          We design sustainable furnitures. Find a piece from<br/> our large collection of luxurius interiors designed<br/> by professional interior designers
+        </p>
+       
+     <button class="Explore"><a href="#projects-section" id="a-nav-link" style="text-decoration: none; color: #fff;">Explore product</a></button>
+        
+      </div>
+     <div class="added">
+      <i class="fas fa-arrow-alt-circle-up"></i>
+      <i class="fas fa-arrow-alt-circle-down"></i>
+      Scroll buttons
+     </div>
+    </span>
+    <span>
+      <div style="width: 12%; display: flex;" class="image"> 
+      
+        <img src="images/wood1.jpg" style="position: relative; bottom: 26rem; left: 43rem; height: 370px; border-radius: 1rem; width: 270px;">
+        <img src="images/wood2.jpg" style="position: relative; bottom: 30rem; left: 45rem; height: 370px; border-radius: 1rem;">
+        <img src="images/wood3.jpg" style="position: relative; bottom: 26rem; left: 47rem;height: 370px; border-radius: 1rem; ">
+      </div>
+    </span>
+     </div>
+    
+     
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      const navbar = document.getElementById("main-nav");
+      const toogle = document.getElementById("toogle");
+      const navlink = document.getElementById("nav-links");
+      const a_nav_link = document.getElementById("a-nav-link");
+
+      document.onclick = function (e) {
+        if (e.target.id == "a-nav-link") {
+          navlink.classList.remove("active");
+          toogle.classList.remove("active");
+        }
+      };
+
+      toogle.onclick = function () {
+        toogle.classList.toggle("active");
+        navlink.classList.toggle("active");
+      };
+    </script>
+<div id="projects-section" class="projects-section">
+  <p style="color: black;">Some of our <span class="text-secondary">works</span></p>
+  <div class="project-grid">
+    <div >
+      <div class="a-project-card">
+        <div class="project-image-container">
+        <img  src="./images/wood1.jpg" alt="" style="height: 236px; "/>
+        </div>
+        <div class="project-content">
+          <p>cashmere woods </p>
+          <div class="about-project">
+           simple and elegant wood for beautifying your house
+          </div>
+         
+        </div>
+      </div>
+    </div>
+
+    <div >
+      <div class="a-project-card">
+        <div class="project-image-container">
+          <img class="project-image" src="./images/wood2.jpg" alt="" height="236px" />
+        </div>
+        <div class="project-content">
+          <p>caramel woods</p>
+          <div class="about-project">
+            this wood helps to add beauty and it has a nice scent too
+          </div>
+        
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="a-project-card">
+        <div class="project-image-container">
+          <img class="project-image" src="./images/wood3.jpg" alt="" style="height: 236px;"/>
+        </div>
+        <div class="project-content">
+          <p>ciara woods</p>
+          <div class="about-project">
+          This is a simple wooden work for your cofee shop
+          </div>
+         
+        </div>
+      </div>
+    </div>
+
+    <div >
+      <div class="a-project-card">
+        <div class="project-image-container">
+          <img class="project-image" src="./images/wood4.jpg" alt="" style="height: 236px;" />
+        </div>
+        <div class="project-content">
+          <p>Nashvile woods</p>
+          <div class="about-project">
+            well this is just a simple but elegant wooden work for decoration
+          </div>
+        
+        </div>
+      </div>
+    </div>
+
+    <div >
+      <div class="a-project-card">
+        <div class="project-image-container">
+          <img class="project-image" src="./images/wood5.jpg" alt="" style="height: 236px;" />
+        </div>
+        <div class="project-content">
+          <p>karibu woods</p>
+          <div class="about-project">
+            well this is just a simple but elegant wooden work for decoration and party
+          </div>
+         
+        </div>
+      </div>
+    </div>
+
+    <div >
+      <div class="a-project-card">
+        <div class="project-image-container">
+          <img class="project-image" src="./images/wood6.jpg" alt="" style="height: 236px;"/>
+        </div>
+        <div class="project-content">
+          <p>karoti woods</p>
+          <div class="about-project">
+           a simple and elegant wood for decoration
+          </div>
+         
+        </div>
+      </div>
+    </div>
+    
+    <div >
+     
+  </body>
+</html>
